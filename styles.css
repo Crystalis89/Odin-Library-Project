@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/*  */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, min(200px));
+    grid-template-areas: 
+   'input'
+   'library';
+}
+
+.formdiv {
+    grid-area: input;
+    margin: 10px;
+    
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#bookscontainer {
+    border: solid black;
+    grid-area: library;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, 170px);
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #966F33;
+}
+
+#bookscontainer .book {
+    border: solid blue;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.deletebutton, .statuschange {
+    width: 30px;
+    height: 30px;
+}
+
+.deletebutton {
+    background-image: url('trash-can-outline.svg');
+}
+
+.bookwords, .deletebutton, .statuschange {
+    border-bottom:solid black
+    
+}
+
+.buttondiv {
+  
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10%;
+
+}

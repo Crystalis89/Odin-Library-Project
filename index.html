@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+
+</head>
+<body>
+    <main>
+    <div class="formdiv">
+        <form id="form">
+            <div>
+                <label for="title">What is the title of the book?</label>
+                <input required id="title" type="text" placeholder="The Hobbit" >
+            </div>
+            
+            <div>  
+                <label for="author">Who is the Author?</label>
+                <input required id="author" type="text" placeholder="J.R.R. Tolkein" >
+            </div>
+            
+            <div>  
+                <label for="pagecount">How many pages in the book?</label>
+                <input id="pagecount" type="number" placeholder="295" required>
+            </div>
+            
+            <div>
+                <p>Have you read the book yet?</p>
+                <label for="readstatusyes">Yes.</label>
+                <input required id="readstatusyes"  type="radio" value="Read" name="readstatus" >  
+                <label for="readstatusno">No.</label>
+                <input required id="readstatusno" type="radio" value="Not Read" name="readstatus" >
+            </div>   
+            <input type="submit" id="submitbutton">
+        </form>
+    </div>
+
+    <div id="bookscontainer">
+            
+            <div class="book" id="The Hobbit">
+                <p class="bookwords" id="The Hobbitpara0">Title: The Hobbit</p>
+                <p class="bookwords" id="The Hobbitpara1">Author: J.R.R. Tolkein</p>
+                <p class="bookwords" id="The Hobbitpara2">Pagecount: 295</p>
+                <p class="bookwords" id="The Hobbitpara3">Status: Read</p>
+                <div class="buttondiv" id="The Hobbitbuttondiv">
+                <button class="deletebutton" id="The Hobbitdeletebutton"></button>
+                <input class="statuschange" id="The Hobbitstatuschange" type="checkbox"></div>
+            </div>
+
+            <div class="book" id="Guards! Guards!">
+                <p class="bookwords" id="Guards! Guards!para0">Title: Guards! Guards!</p>
+                <p class="bookwords" id="Guards! Guards!para1">Author: Terry Pratchett</p>
+                <p class="bookwords" id="Guards! Guards!para2">Pagecount: 400</p>
+                <p class="bookwords" id="Guards! Guards!para3">Status: Read</p>
+                <div class="buttondiv" id="Guards! Guards!buttondiv">
+
+                <button class="deletebutton" id="Guards! Guards!deletebutton"></button>
+                <input class="statuschange" id="Guards! Guards!statuschange" type="checkbox"></div>
+
+            </div>
+            
+    </div>
+    </main>
+</body>
+</html>
