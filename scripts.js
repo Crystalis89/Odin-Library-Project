@@ -51,13 +51,6 @@ let changebutton = document.querySelectorAll('button')
     "author": "Terry Pratchett",
     "pagecount": "400",
     "readstatus": "Read"
-},
-
-{
-    "title": "Harry Potter And The Sorcerer's Stone",
-    "author": "J.K. Rowling",
-    "pagecount": "400",
-    "readstatus": "Read"
 }
 
 
